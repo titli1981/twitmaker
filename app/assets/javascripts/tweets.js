@@ -10,10 +10,9 @@ $(document).on("ready", function() {
             url: '/tweets',
             method: 'POST',
             dataType: 'script',
-            data: tweetData,
-            success: function(data_return) {
-                
-            }
+            data: tweetData
         });
+
+        $('textarea').val('');
     });
 });
